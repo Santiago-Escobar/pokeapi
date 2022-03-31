@@ -14,7 +14,6 @@ list_pokemon = list_pokemon_response['results']
 count = 0
 
 for pokemon in list_pokemon:
-    print(pokemon)
     if ("at" in pokemon['name']) and (pokemon['name'].count("a") > 1):
         count += 1
 
